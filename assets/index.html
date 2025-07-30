@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design template with Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <style>
+   
+      .bg-breadcrumb {
+        background: linear-gradient(
+          180deg,
+          rgba(185, 195, 204, 1) 0%,
+          rgba(149, 161, 176, 1) 100%
+        );
+      }
+      .breadcrumb-item:hover {
+        background: #76e8d6;
+        background: linear-gradient(
+          90deg,
+          rgba(118, 232, 214, 1) 0%,
+          rgba(136, 205, 221, 1) 50%,
+          rgba(154, 178, 228, 1) 100%
+        );
+        cursor: pointer;
+      }
+      .active {
+        background: #76e8d6;
+        background: linear-gradient(
+          90deg,
+          rgba(118, 232, 214, 1) 0%,
+          rgba(136, 205, 221, 1) 50%,
+          rgba(154, 178, 228, 1) 100%
+        );
+      }
+      .nav-item {
+        border-bottom: 1px solid white;
+        transition: 0.6s;
+      }
+      .nav-item:hover {
+        background: #76e8d6;
+        background: linear-gradient(
+          90deg,
+          rgba(118, 232, 214, 1) 0%,
+          rgba(136, 205, 221, 1) 50%,
+          rgba(154, 178, 228, 1) 100%
+        );
+        cursor: pointer;
+        padding-left: 10px;
+      }
+
+      .bg-catecory {
+        background-color: #caced4;
+      }
+
+      .breadcrumb-item + .breadcrumb-item::before {
+        content: none;
+      }
+      .link-click:hover {
+        transform: scale(1.02);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <nav class="d-flex px-2 py-4">
+          <div>
+            <img src="/assets/img/logo.png" alt="" />
+          </div>
+          <div class="ms-auto">
+            <img src="/assets/img/address.png" alt="" />
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-fluid px-0">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0 bg-breadcrumb">
+            <li
+              class="breadcrumb-item py-3 px-5 border-end text-white active cusor"
+            >
+              <a href="#" class="text-white text-decoration-none fw-bold"
+                >Home</a
+              >
+            </li>
+            <li class="breadcrumb-item py-3 px-5 border-end text-white">
+              <a href="#" class="text-white text-decoration-none fw-bold"
+                >Product</a
+              >
+            </li>
+            <li class="breadcrumb-item py-3 px-5 border-end text-white">
+              <a href="#" class="text-white text-decoration-none fw-bold"
+                >Promotion</a
+              >
+            </li>
+            <li class="breadcrumb-item py-3 px-5 border-end text-white">
+              <a href="#" class="text-white text-decoration-none fw-bold"
+                >Marketing</a
+              >
+            </li>
+            <li class="breadcrumb-item py-3 px-5 border-end text-white">
+              <a href="#" class="text-white text-decoration-none fw-bold"
+                >Contact Us</a
+              >
+            </li>
+            <li class="breadcrumb-item py-3 px-5 border-end text-white">
+              <a href="#" class="text-white text-decoration-none fw-bold"
+                >About Us</a
+              >
+            </li>
+          </ol>
+        </nav>
+
+        <!-- Hero Image -->
+        <div class="px-2 pb-2">
+          <img
+            src="/assets/img/2.png"
+            class="img-fluid object-fit-cover w-100"
+            alt=""
+          />
+        </div>
+
+        <!-- Main Content -->
+        <section class="mx-2">
+          <div class="row g-2">
+            <!-- Sidebar -->
+            <div class="col-md-2">
+              <div class="rounded-top bg-catecory mb-2">
+                <h5
+                  class="fw-medium py-2 text-center bg-breadcrumb text-white rounded-top"
+                >
+                  Man Category
+                </h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-dark border-bottom border-white text-white fs-5"
+                      href="#"
+                      >Addidas</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-dark border-bottom border-white text-white fs-5"
+                      href="#"
+                      >Oxford</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-dark border-bottom border-white text-white fs-5"
+                      href="#"
+                      >Kito</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-dark border-bottom border-white text-white fs-5"
+                      href="#"
+                      >Puma</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark text-white fs-5" href="#"
+                      >Walker</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark text-white fs-5" href="#"
+                      >Nike</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark text-white fs-5" href="#"
+                      >Olympic</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark text-white fs-5" href="#"
+                      >Sessor</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="rounded-top bg-catecory">
+                <h5
+                  class="fw-medium py-2 text-center bg-breadcrumb text-white rounded-top"
+                >
+                  Man Category
+                </h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link text-dark text-white fs-5" href="#"
+                      >Addidas</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark text-white fs-5" href="#"
+                      >Oxford</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark text-white fs-5" href="#"
+                      >Kito</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark text-white fs-5" href="#"
+                      >Puma</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark text-white fs-5" href="#"
+                      >Walker</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark text-white fs-5" href="#"
+                      >Nike</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark text-white fs-5" href="#"
+                      >Olympic</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark text-white fs-5" href="#"
+                      >Sessor</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-10">
+              <!-- Addidas Section -->
+              <div
+                class="d-flex justify-content-between align-items-center bg-breadcrumb text-white p-2 mb-2 rounded"
+              >
+                <h5 class="mb-0">Addidas</h5>
+                <a href="#" class="text-white text-decoration-none link-click"
+                  >Read more</a
+                >
+              </div>
+              <div class="row g-4 mb-2 px-3 py-3">
+                <div class="col-md-3">
+                  <div class="bg-white p-4 rounded border card"></div>
+                </div>
+                <div class="col-md-3">
+                  <div class="bg-white p-4 rounded border card "></div>
+                </div>
+                <div class="col-md-3">
+                  <div class="bg-white p-4 rounded border card"></div>
+                </div>
+                <div class="col-md-3">
+                  <div class="bg-white p-4 rounded border card "></div>
+                </div>
+              </div>
+
+              <!-- Oxford Section -->
+              <div
+                class="d-flex justify-content-between align-items-center bg-breadcrumb text-white p-2 mb-2 rounded"
+              >
+                <h5 class="mb-0">Oxford</h5>
+                <a href="#" class="text-white text-decoration-none link-click"
+                  >Read more</a
+                >
+              </div>
+              <div class="row g-4 mb-2 px-3 py-3">
+                <div class="col-md-3">
+                  <div class="bg-white p-4 rounded border card"></div>
+                </div>
+                <div class="col-md-3">
+                  <div class="bg-white p-4 rounded border card"></div>
+                </div>
+                <div class="col-md-3">
+                  <div class="bg-white p-4 rounded border card"></div>
+                </div>
+                <div class="col-md-3">
+                  <div class="bg-white p-4 rounded border card"></div>
+                </div>
+              </div>
+
+              <!-- Oxford Section -->
+
+              <div
+                class="d-flex justify-content-between align-items-center bg-breadcrumb text-white p-2 mb-2 rounded"
+              >
+                <h5 class="mb-0">Nike</h5>
+                <a href="#" class="text-white text-decoration-none link-click"
+                  >Read more</a
+                >
+              </div>
+              <div class="row g-4 mb-2 px-3 py-3">
+                <div class="col-md-3">
+                  <div class="bg-white p-4 rounded border card"></div>
+                </div>
+                <div class="col-md-3">
+                  <div class="bg-white p-4 rounded border card"></div>
+                </div>
+                <div class="col-md-3">
+                  <div class="bg-white p-4 rounded border card"></div>
+                </div>
+                <div class="col-md-3">
+                  <div class="bg-white p-4 rounded border card"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="bg-breadcrumb text-white text-center py-5">
+        <div class="container">
+            <a href="#" class="text-decoration-none fs-5 text-white fw-medium">Copyright &copy; 2023. ALL Right Reserved</a>
+        </div>
+    </footer>
+  </body>
+</html>
