@@ -6,9 +6,7 @@
     <title>Design template with Bootstrap</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <style>
-      body {
-        background-color: #f0f0f0;
-      }
+   
       .bg-breadcrumb {
         background: linear-gradient(
           180deg,
@@ -65,7 +63,7 @@
   </head>
   <body>
     <header>
-      <div class="container bg-white">
+      <div class="container-fluid">
         <nav class="d-flex px-2 py-4">
           <div>
             <img src="/assets/img/logo.png" alt="" />
@@ -78,7 +76,7 @@
     </header>
 
     <main>
-      <div class="container px-0 bg-white">
+      <div class="container-fluid px-0">
         <!-- Breadcrumb -->
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-0 bg-breadcrumb">
@@ -118,7 +116,7 @@
         </nav>
 
         <!-- Hero Image -->
-        <div class="px-2 pb-2">
+        <div class="px-2 pb-2 ">
           <img
             src="/assets/img/2.png"
             class="img-fluid object-fit-cover w-100"
@@ -255,13 +253,13 @@
                   <div class="bg-white p-4 rounded border card"></div>
                 </div>
                 <div class="col-md-3">
-                  <div class="bg-white p-4 rounded border card"></div>
+                  <div class="bg-white p-4 rounded border card "></div>
                 </div>
                 <div class="col-md-3">
                   <div class="bg-white p-4 rounded border card"></div>
                 </div>
                 <div class="col-md-3">
-                  <div class="bg-white p-4 rounded border card"></div>
+                  <div class="bg-white p-4 rounded border card "></div>
                 </div>
               </div>
 
@@ -318,12 +316,10 @@
         </section>
       </div>
     </main>
-    <footer >
-      <div class="container bg-breadcrumb text-white text-center py-5">
-        <a href="#" class="text-decoration-none fs-5 text-white fw-medium"
-          >Copyright &copy; 2023. ALL Right Reserved</a
-        >
-      </div>
+    <footer class="bg-breadcrumb text-white text-center py-5">
+        <div class="container">
+            <a href="#" class="text-decoration-none fs-5 text-white fw-medium">Copyright &copy; 2023. ALL Right Reserved</a>
+        </div>
     </footer>
   </body>
 </html>
